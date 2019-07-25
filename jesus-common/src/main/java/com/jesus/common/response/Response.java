@@ -9,10 +9,6 @@ public final class Response {
     private String message;
     private Object data;
 
-    public static Response ok(String message,Object data) {
-        return new Response(ResponseEnum.SUCCESS.code,message,data);
-    }
-    
     public static Response ok(Object data) {
         return new Response(ResponseEnum.SUCCESS.code,ResponseEnum.SUCCESS.message,data);
     }
@@ -26,11 +22,11 @@ public final class Response {
     }
 
     public static  Response fail(String message){
-        return new Response(ResponseEnum.FAIL.code,message,"");
+        return new Response(ResponseEnum.FAIL.code,ResponseEnum.FAIL.message,message);
     }
 
-    public static Response error(){
-        return new Response(ResponseEnum.ERROR.code,ResponseEnum.ERROR.message,"");
+    public static Response info(String code,String message,Object data){
+        return new Response(code,message,data);
     }
 
     public static Response error(String message){

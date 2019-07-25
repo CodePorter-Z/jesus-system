@@ -2,9 +2,9 @@ package com.jesus.user.shiro;
 
 import com.jesus.common.base.redis.service.RedisService;
 import com.jesus.common.utils.CommonUtil;
+import com.jesus.user.modules.user.service.UserService;
 import com.jesus.user.shiro.serializable.ByteSourceUtils;
-import com.jesus.user.web.controller.user.service.UserService;
-import com.jesus.user.model.user.User;
+import com.jesus.user.domain.user.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -48,7 +48,7 @@ public class ShiroRealm extends AuthorizingRealm {
         String userName = (String)token.getPrincipal();
 
         if(CommonUtil.isEmpty(userName)){
-            throw new UnknownAccountException("未知错误");
+            throw new UnknownAccountException("the username is empty. chance is user not input username so check username");
         }
 
         //通过username从数据库中查找 User对象.
@@ -61,9 +61,6 @@ public class ShiroRealm extends AuthorizingRealm {
         if(user.getState() != User.State.ENABLED){
             throw new LockedAccountException();
         }
-
-        redisService.set("user",user);
-        log.debug(user.toString());
 
         /**
          * @parmater 1

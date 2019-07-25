@@ -79,9 +79,3 @@ spring:
         min-idle: 0
     #毫秒单位
     timeout: 10000
-
-mybatis:
-  # 映射文件所在路径
-  mapper-locations: classpath:mappers/*.xml
-  # pojo类所在包路径
-  type-aliases-package: com.jeuse.user.model

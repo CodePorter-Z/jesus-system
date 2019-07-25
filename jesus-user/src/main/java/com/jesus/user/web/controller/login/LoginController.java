@@ -1,5 +1,6 @@
 package com.jesus.user.web.controller.login;
 
+import com.jesus.common.base.constant.GlobalConstant;
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
 import com.jesus.user.shiro.data.Login;
@@ -24,19 +25,27 @@ public class LoginController {
      * @param request HTTP 请求体体
      * @return JSON
      */
-    @GetMapping(value = "/login")
-    public Response login(HttpServletRequest request) {
+    @GetMapping(value = "/doLogin")
+    public Response doLogin(HttpServletRequest request) {
         String code = request.getParameter("code");
-        String admin = "jAdmin";
-        if (CommonUtil.isEmpty(code) || !admin.equals(code)) {
-            return Response.fail("验证失败");
+        if (CommonUtil.isEmpty(code)) {
+            return Response.fail("请输入用户名");
         }
+
         // 通过code，或其他方式进行渠道认证
         //Java 8 新特性 函数式接口
-        //Function<String, String> channel = (r -> r);
-        //String login = channel.apply(code);
+        Function<String, String> channel = (r -> {
+            for(String str : GlobalConstant.Channel.channelList){
+                if(str.equals(r)){
+                    return str;
+                }
+            }
+            return r;
+        });
+        String login = channel.apply(code);
+
         // 执行免密码登录
-        return doLogin(new CipherFreeToken(code));
+        return doLogin(new CipherFreeToken(login));
     }
 
     /**
@@ -45,8 +54,8 @@ public class LoginController {
      * @param login 登录信息
      * @return json
      */
-    @PostMapping(value = "/login")
-    public Response login(@RequestBody Login login) {
+    @PostMapping(value = "/doLogin")
+    public Response doLogin(@RequestBody Login login) {
 
         UsernamePasswordToken token = new UsernamePasswordToken(login.getUsername(),
                 login.getPassword(),

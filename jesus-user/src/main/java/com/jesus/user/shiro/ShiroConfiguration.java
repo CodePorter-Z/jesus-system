@@ -9,18 +9,21 @@ import com.jesus.common.utils.encrypt.EncryptUtil;
 import com.jesus.user.shiro.data.CipherFreeHashedCredentialsMatcher;
 import com.jesus.user.shiro.data.CustomWebSessionManager;
 import com.jesus.common.base.redis.model.RedisOptions;
+import com.jesus.user.shiro.filter.KickoutSessionFilter;
 import com.jesus.user.shiro.filter.LoginAccountFilter;
-import com.jesus.user.shiro.filter.SessionInvalidFilter;
+import com.jesus.user.shiro.filter.StatelessAuthcFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.mgt.SessionManager;
+import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
 import org.apache.shiro.session.mgt.eis.SessionDAO;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.CookieRememberMeManager;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.servlet.SimpleCookie;
+import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.crazycake.shiro.RedisCacheManager;
 import org.crazycake.shiro.RedisManager;
 import org.crazycake.shiro.RedisSessionDAO;
@@ -29,11 +32,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.DelegatingFilterProxy;
 
+import javax.annotation.Resource;
 import javax.servlet.Filter;
 
 @Configuration
 @Slf4j
 public class ShiroConfiguration {
+
+
+	@Resource
+	private RedisOptions redisOptions;
 
 	/**
 	 * 自定义过滤器
@@ -49,8 +57,34 @@ public class ShiroConfiguration {
 	 * @return 过滤器配置
 	 */
 	@Bean
-	public SessionInvalidFilter sessionInvalidFilter() {
-		return new SessionInvalidFilter();
+	public StatelessAuthcFilter statelessAuthcFilter() {
+		return new StatelessAuthcFilter();
+	}
+
+	@Bean
+	public DefaultWebSessionManager sessionManager() {
+		DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
+		sessionManager.setSessionDAO(redisSessionDAO(redisManager()));
+		return sessionManager;
+	}
+
+	@Bean
+	public KickoutSessionFilter kickoutSessionFilter(){
+		RedisOptions redisOptions = new RedisOptions();
+		KickoutSessionFilter kickoutSessionFilter = new KickoutSessionFilter();
+		//使用cacheManager获取相应的cache来缓存用户登录的会话；用于保存用户—会话之间的关系的；
+		//这里我们还是用之前shiro使用的ehcache实现的cacheManager()缓存管理
+		//也可以重新另写一个，重新配置缓存时间之类的自定义缓存属性
+		kickoutSessionFilter.setCacheManager(cacheManager(redisManager()));
+		//用于根据会话ID，获取会话进行踢出操作的；
+		kickoutSessionFilter.setSessionManager(sessionManager());
+		//是否踢出后来登录的，默认是false；即后者登录的用户踢出前者登录的用户；踢出顺序。
+		kickoutSessionFilter.setKickoutAfter(false);
+		//同一个用户最大的会话数，默认1；比如2的意思是同一个用户允许最多同时两个人登录；
+		kickoutSessionFilter.setMaxSession(1);
+		//被踢出后重定向到的地址；
+		kickoutSessionFilter.setKickoutUrl("/jesus/doLogin?kickout=1");
+		return kickoutSessionFilter;
 	}
 
 	/**
@@ -69,7 +103,8 @@ public class ShiroConfiguration {
 		//自定义过滤器
 		LinkedHashMap<String, Filter> filtersMap = new LinkedHashMap<>();
 		filtersMap.put("loginAccount", loginAccountFilter());
-		filtersMap.put("sessionInvalidFilter", sessionInvalidFilter());
+		filtersMap.put("statelessAuthcFilter", statelessAuthcFilter());
+		filtersMap.put("kickoutSessionFilter", kickoutSessionFilter());
 		shiroFilterFactoryBean.setFilters(filtersMap);
 
 		// 拦截器
@@ -78,9 +113,9 @@ public class ShiroConfiguration {
 		filterChainDefinitionMap.put("/jesus/logout", "logout");
 		// <!-- 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边 -->:这是一个坑呢，一不小心代码就不好使了;
 		// <!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问-->
-		filterChainDefinitionMap.put("/**", "loginAccount,sessionInvalidFilter,authc");
+		filterChainDefinitionMap.put("/**", "loginAccount,statelessAuthcFilter,kickoutSessionFilter,authc");
 		// 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
-		shiroFilterFactoryBean.setLoginUrl("/jesus/login");
+		shiroFilterFactoryBean.setLoginUrl("/jesus/doLogin");
 		// 登录成功后要跳转的链接
 		shiroFilterFactoryBean.setSuccessUrl("/index");
 		// 未授权界面;
@@ -97,12 +132,12 @@ public class ShiroConfiguration {
 	}
 
 	@Bean("shiroRedisManager")
-	public RedisManager redisManager(RedisOptions options) {
+	public RedisManager redisManager() {
 		RedisManager redisManager = new RedisManager();
-		redisManager.setHost(options.getHost());
-		redisManager.setPort(options.getPort());
-		redisManager.setTimeout(options.getTimeout());
-		redisManager.setPassword(options.getPassword());
+		redisManager.setHost(redisOptions.getHost());
+		redisManager.setPort(redisOptions.getPort());
+		redisManager.setTimeout(redisOptions.getTimeout());
+		redisManager.setPassword(redisOptions.getPassword());
 		return redisManager;
 	}
 
