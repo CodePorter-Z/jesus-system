@@ -19,7 +19,7 @@ public interface RedisService {
      * 删除指定key
      * @param key
      */
-    void delete(String key);
+    void remove(String key);
 
     /**
      * 存储到redis

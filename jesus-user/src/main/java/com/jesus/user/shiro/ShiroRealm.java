@@ -1,5 +1,6 @@
 package com.jesus.user.shiro;
 
+import com.jesus.common.base.constant.GlobalConstant;
 import com.jesus.common.base.redis.service.RedisService;
 import com.jesus.common.utils.CommonUtil;
 import com.jesus.user.modules.user.service.UserService;
@@ -55,12 +56,14 @@ public class ShiroRealm extends AuthorizingRealm {
         //实际项目中，这里可以根据实际情况做缓存，如果不做，Shiro自己也是有时间间隔机制，2分钟内不会重复执行该方法
         User user = userService.findByUserName(userName);
         if(CommonUtil.isNull(user)){
-            throw new UnknownAccountException();
+            throw new UnknownAccountException("account not exist");
         }
 
         if(user.getState() != User.State.ENABLED){
-            throw new LockedAccountException();
+            throw new LockedAccountException("account has locked. contact system manager unlock");
         }
+
+        redisService.set(GlobalConstant.Redis.REDIS_USER,user);
 
         /**
          * @parmater 1

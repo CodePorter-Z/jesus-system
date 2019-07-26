@@ -73,7 +73,7 @@ public class LoginAccountFilter extends PathMatchingFilter {
 
             //清除缓存
             if(logAction.getMethod().contains("/logout")){
-                redisService.delete(GlobalConstant.Redis.REDIS_USER);
+                redisService.remove(GlobalConstant.Redis.REDIS_USER);
             }
         } catch (Exception e) {
             log.error("LoginAccountFilter.onPreHandle() Exception : {}",e.getMessage());

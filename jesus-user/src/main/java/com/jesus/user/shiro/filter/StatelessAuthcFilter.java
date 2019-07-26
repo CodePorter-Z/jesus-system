@@ -10,6 +10,7 @@ import com.jesus.user.domain.user.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
@@ -22,7 +23,6 @@ import javax.servlet.http.HttpServletResponse;
 
 @Slf4j
 public class StatelessAuthcFilter extends AccessControlFilter {
-
 
     @Resource
     private RedisService redisService;
@@ -56,24 +56,30 @@ public class StatelessAuthcFilter extends AccessControlFilter {
         log.info(url);
         try {
             Subject subject = SecurityUtils.getSubject();
-            if (!CommonUtil.isNull(subject.getPrincipal())) {
-                User userInfo = (User)subject.getPrincipal();
+            User userInfo = (User)subject.getPrincipal();
+            if (!CommonUtil.isNull(userInfo)) {
                 String userId = String.valueOf(userInfo.getId());
 
-                //存储userId 到HttpServletRequest
-                request.setAttribute(GlobalConstant.User.USER_ID,userId);
+                //id 丢失处理
+                if(CommonUtil.isEmpty(userId)){
+                    User user = (User) redisService.get(GlobalConstant.Redis.REDIS_USER);
+                    if (!CommonUtil.isNull(user)) {
+                        if (user.getUsername().equals(userInfo.getUsername())) {
+                            userInfo.setId(user.getId());
+                            userId = String.valueOf(user.getId());
+                        }
+                    }
+                }
                 String encrypt_token = AESUtil.Encrypt(userId);
                 if(url.contains("/doLogin")) {
                     //设置请求头信息
                     response.setHeader("token", encrypt_token);
                     response.setHeader("timestamp",String.valueOf(System.currentTimeMillis()));
                     response.setHeader("type", userInfo.getRole().getRoleType());
-                    //存入redis 缓存
-                    redisService.set(GlobalConstant.Redis.REDIS_USER,userInfo);
                 }
             }
         } catch (AuthenticationException e) {
-            RenderUtil.renderJson(response, Response.info("40013","account not exist","验证信息已过期，请重新登录"));
+            RenderUtil.renderJson(response, Response.info("40013","account info has expired","验证信息已过期，请重新登录"));
             return false;
         }catch (Exception e){
             log.error("请求：{}\t异常:{}",url,e.getMessage());
