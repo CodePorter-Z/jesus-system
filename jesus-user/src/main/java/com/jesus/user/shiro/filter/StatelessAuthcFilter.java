@@ -24,8 +24,8 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 public class StatelessAuthcFilter extends AccessControlFilter {
 
-    @Resource
-    private RedisService redisService;
+//    @Resource
+//    private RedisService redisService;
 
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object o) throws Exception {
@@ -53,41 +53,40 @@ public class StatelessAuthcFilter extends AccessControlFilter {
             return false;
         }
         String url = request.getServletPath();
-
         log.info(url);
         try {
-            if(url.contains("/doLogin")){
-                Subject subject = this.getSubject(request, response);
-                User userInfo = (User) subject.getPrincipal();
-                if (!CommonUtil.isNull(userInfo)) {
-                    String userId = String.valueOf(userInfo.getId());
-
-                    //id 丢失处理
-                    if (CommonUtil.isEmpty(userId)) {
-                        User user = (User) redisService.get(GlobalConstant.Redis.REDIS_USER);
-                        if (!CommonUtil.isNull(user)) {
-                            if (user.getUsername().equals(userInfo.getUsername())) {
-                                userInfo.setId(user.getId());
-                                userId = String.valueOf(user.getId());
-                            }
-                        }
-                    }
-                    String encrypt_token = AESUtil.Encrypt(userId);
-                    if (url.contains("/doLogin")) {
-                        //设置请求头信息
-                        response.setHeader("X-Token", encrypt_token);
-                        response.setHeader("timestamp", String.valueOf(System.currentTimeMillis()));
-                        response.setHeader("Auth-Type", userInfo.getRole().getRoleType());
-                    }
-                }
-            }else{
-                //获取请求头信息
-                String token = request.getHeader("X-Token");
-                String timestamp = request.getHeader("timestamp");
-                if(CommonUtil.isEmpty(token) || CommonUtil.isEmpty(timestamp)){
-                    throw new AuthenticationException();
-                }
-            }
+//            if(url.contains("/login")){
+//                Subject subject = this.getSubject(request, response);
+//                User userInfo = (User) subject.getPrincipal();
+//                if (!CommonUtil.isNull(userInfo)) {
+//                    String userId = String.valueOf(userInfo.getId());
+//
+//                    //id 丢失处理
+//                    if (CommonUtil.isEmpty(userId)) {
+//                        User user = (User) redisService.get(GlobalConstant.Redis.REDIS_USER);
+//                        if (!CommonUtil.isNull(user)) {
+//                            if (user.getUsername().equals(userInfo.getUsername())) {
+//                                userInfo.setId(user.getId());
+//                                userId = String.valueOf(user.getId());
+//                            }
+//                        }
+//                    }
+//                    String encrypt_token = AESUtil.Encrypt(userId);
+//                    if (url.contains("/doLogin")) {
+//                        //设置请求头信息
+//                        response.setHeader("X-Token", encrypt_token);
+//                        response.setHeader("timestamp", String.valueOf(System.currentTimeMillis()));
+//                        response.setHeader("Auth-Type", userInfo.getRole().getRoleType());
+//                    }
+//                }
+//            }else{
+//                //获取请求头信息
+//                String token = request.getHeader("X-Token");
+//                String timestamp = request.getHeader("timestamp");
+//                if(CommonUtil.isEmpty(token) || CommonUtil.isEmpty(timestamp)){
+//                    throw new AuthenticationException();
+//                }
+//            }
         } catch (AuthenticationException e) {
             RenderUtil.renderJson(response, Response.info("40013","account info has expired","验证信息已过期，请重新登录"));
             return false;

@@ -1,13 +1,14 @@
 package com.jesus.user.modules.user.service;
 
+import com.jesus.user.domain.resource.Resource;
 import com.jesus.user.domain.role.Role;
 import com.jesus.user.domain.user.User;
 import com.jesus.user.modules.resource.repository.ResourceRepository;
 import com.jesus.user.modules.user.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -17,10 +18,10 @@ import java.util.stream.Collectors;
 @Service
 public class IUserService implements UserService {
 
-    @Resource
+    @Autowired
     private UserRepository userRepository;
 
-    @Resource
+    @Autowired
     private ResourceRepository resourceRepository;
 
     @Override
@@ -52,7 +53,7 @@ public class IUserService implements UserService {
 
         return resourceRepository.findAllById(resourceIds)
                 .stream()
-                .map(com.jesus.user.domain.resource.Resource::getPermission)
+                .map(Resource::getPermission)
                 .collect(Collectors.toSet());
     }
 }

@@ -15,9 +15,19 @@ eureka:
 #自定义路由映射
 zuul:
   routes:
-    jesus-user: /auth/v1/web/**
-    jesus-api: /api/v1/web/**
-  #统一入口为上面的配置，其他入口忽略
-  ignored-patterns: /jesus-*/**
-  #忽略整个服务，对外提供接口
-  ignored-services: order-service
+    # 用户模块
+    jesus-user:
+      path: /user/v1/web/**
+      serviceId: jesus-user
+    #api 模块
+    jesus-api:
+      path: /api/v1/web/**
+      serviceId: jesus-api
+    #前台项目地址 github
+    github:
+      path: /github
+      serviceId: https://github.com/JesusChrist-ssr/jesus_managent
+#  #统一入口为上面的配置，其他入口忽略
+#  ignored-patterns: /jesus-*/**
+#  #忽略整个服务，对外提供接口
+#  ignored-services: order-service

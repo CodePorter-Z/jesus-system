@@ -30,6 +30,12 @@ public class Resource extends GenerateId<Long> implements Serializable {
     @Column
     private Status state;
 
+    /**
+     * 权限修饰符
+     */
+    @Column
+    private String permission;
+
     public enum Type {
         Menu(1), Button(0);
 

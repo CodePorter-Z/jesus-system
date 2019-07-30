@@ -16,7 +16,7 @@ import java.util.function.Function;
 
 @RestController
 @Slf4j
-@RequestMapping("/user")
+@RequestMapping("/user/v1/web")
 public class LoginController {
 
     /**
