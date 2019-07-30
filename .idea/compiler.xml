@@ -10,11 +10,6 @@
         <module name="eureka-server" />
         <module name="jesus-user" />
         <module name="jesus-common" />
-      </profile>
-      <profile name="Annotation profile for spring-cloud-demo" enabled="true">
-        <sourceOutputDir name="../zuul-server/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../zuul-server/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="zuul-gateway" />
       </profile>
     </annotationProcessing>

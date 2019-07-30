@@ -12,16 +12,16 @@
     </parent>
 
     <groupId>com.jesus.mycloud</groupId>
-    <artifactId>springcloud-demo</artifactId>
+    <artifactId>jesus-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-demo</name>
+    <name>jesus-system</name>
 
     <modules>
         <module>eureka-server</module>
         <module>jesus-api</module>
         <module>jesus-common</module>
         <module>jesus-user</module>
-        <module>zuul-server</module>
+        <module>zuul-gateway</module>
     </modules>
 
 <!--    <build>-->

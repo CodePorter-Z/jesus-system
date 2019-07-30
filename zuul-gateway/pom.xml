@@ -5,15 +5,15 @@
 
     <parent>
         <groupId>com.jesus.mycloud</groupId>
-        <artifactId>springcloud-demo</artifactId>
+        <artifactId>jesus-system</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.jesus.fashion.zuul</groupId>
-    <artifactId>zuul-server</artifactId>
+    <artifactId>zuul-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>zuul-server</name>
+    <name>zuul-gateway</name>
     <description>网关服务</description>
 
     <properties>
