@@ -33,20 +33,22 @@ public final class Response {
         return new Response(ResponseEnum.ERROR.code,message,"");
     }
 
+    public static Response sessionOutTime(){
+        return new Response(ResponseEnum.SESSION_OUT_TIME.code,ResponseEnum.SESSION_OUT_TIME.message,"登录信息已过期，请重新登录");
+    }
+
     private Response(String code, String message, Object data) {
         this.code = code;
         this.message = message;
         this.data = data;
     }
 
-    public Response() {
-    }
-
     enum  ResponseEnum{
 
         SUCCESS("20000","success"),
         FAIL("40500","fail"),
-        ERROR("50000","error");
+        ERROR("50000","error"),
+        SESSION_OUT_TIME("40013","session_out_time");
 
         private String code;
         private String message;

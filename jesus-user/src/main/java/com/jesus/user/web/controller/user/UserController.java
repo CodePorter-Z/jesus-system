@@ -20,7 +20,7 @@ import java.util.Date;
 
 
 @RestController
-@RequestMapping("/main/user")
+@RequestMapping("/user")
 @Slf4j
 public class UserController {
 

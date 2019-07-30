@@ -21,11 +21,14 @@ public class Resource extends GenerateId<Long> implements Serializable {
     @Column
     private String url;
 
-    @Column
-    private String permission;
+    @Column(name = "parent_id")
+    private String parentId;
 
     @Column
     private Type type;
+
+    @Column
+    private Status state;
 
     public enum Type {
         Menu(1), Button(0);
@@ -34,6 +37,19 @@ public class Resource extends GenerateId<Long> implements Serializable {
 
         Type(Integer type) {
             this.type = type;
+        }
+    }
+
+    /**
+     * 状态枚举
+     */
+    public enum Status {
+        ENABLED("启用"), DISABLED("禁用"), DELETED("异常");
+
+        private String desc;
+
+        Status(String desc) {
+            this.desc = desc;
         }
     }
 }

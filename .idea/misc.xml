@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/jesus-api/pom.xml" />
         <option value="$PROJECT_DIR$/jesus-common/pom.xml" />
         <option value="$PROJECT_DIR$/jesus-user/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
       </list>
     </option>
   </component>

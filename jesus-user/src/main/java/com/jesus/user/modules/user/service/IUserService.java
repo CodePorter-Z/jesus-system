@@ -2,7 +2,7 @@ package com.jesus.user.modules.user.service;
 
 import com.jesus.user.domain.role.Role;
 import com.jesus.user.domain.user.User;
-import com.jesus.user.modules.permissions.repository.ResourceRepository;
+import com.jesus.user.modules.resource.repository.ResourceRepository;
 import com.jesus.user.modules.user.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;

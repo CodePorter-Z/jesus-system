@@ -11,6 +11,12 @@
         <module name="jesus-user" />
         <module name="jesus-common" />
       </profile>
+      <profile name="Annotation profile for spring-cloud-demo" enabled="true">
+        <sourceOutputDir name="../zuul-server/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../zuul-server/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zuul-gateway" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="1.8" />
@@ -18,6 +24,7 @@
       <module name="jesus-common" target="1.8" />
       <module name="jesus-system" target="1.8" />
       <module name="jesus-user" target="1.8" />
+      <module name="zuul-gateway" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,6 +34,7 @@
       <module name="jesus-common" options="-parameters" />
       <module name="jesus-system" options="-parameters" />
       <module name="jesus-user" options="-parameters" />
+      <module name="zuul-gateway" options="-parameters" />
     </option>
   </component>
 </project>

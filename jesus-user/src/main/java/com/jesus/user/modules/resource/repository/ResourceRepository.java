@@ -1,4 +1,4 @@
-package com.jesus.user.modules.permissions.repository;
+package com.jesus.user.modules.resource.repository;
 
 import com.jesus.common.base.core.repository.BaseRepository;
 import com.jesus.user.domain.resource.Resource;

@@ -21,6 +21,7 @@
         <module>jesus-api</module>
         <module>jesus-common</module>
         <module>jesus-user</module>
+        <module>zuul-server</module>
     </modules>
 
 <!--    <build>-->

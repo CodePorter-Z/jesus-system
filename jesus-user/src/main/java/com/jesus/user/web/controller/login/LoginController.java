@@ -16,7 +16,7 @@ import java.util.function.Function;
 
 @RestController
 @Slf4j
-@RequestMapping("/jesus")
+@RequestMapping("/user")
 public class LoginController {
 
     /**
@@ -25,7 +25,7 @@ public class LoginController {
      * @param request HTTP 请求体体
      * @return JSON
      */
-    @GetMapping(value = "/doLogin")
+    @GetMapping(value = "/login")
     public Response doLogin(HttpServletRequest request) {
         String code = request.getParameter("code");
         if (CommonUtil.isEmpty(code)) {
@@ -54,7 +54,7 @@ public class LoginController {
      * @param login 登录信息
      * @return json
      */
-    @PostMapping(value = "/doLogin")
+    @PostMapping(value = "/login")
     public Response doLogin(@RequestBody Login login) {
 
         UsernamePasswordToken token = new UsernamePasswordToken(login.getUsername(),
@@ -63,7 +63,7 @@ public class LoginController {
         return doLogin(token);
     }
 
-    @GetMapping("/logout")
+    @PostMapping("/logout")
     public Response logout(){
         try {
             Subject subject = SecurityUtils.getSubject();
