@@ -1,0 +1,23 @@
+server:
+  port: 8989
+
+#服务的名称
+spring:
+  application:
+    name: zuul-gateway
+
+#指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+
+#自定义路由映射
+zuul:
+  routes:
+    jesus-user: /auth/v1/web/**
+    jesus-api: /api/v1/web/**
+  #统一入口为上面的配置，其他入口忽略
+  ignored-patterns: /jesus-*/**
+  #忽略整个服务，对外提供接口
+  ignored-services: order-service
