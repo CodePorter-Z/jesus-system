@@ -31,12 +31,14 @@ zuul:
   routes:
     # 用户模块
     jesus-user:
-      path: /user/v1/web/**
+      path: /auth/**
       serviceId: jesus-user
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
     #api 模块
     jesus-api:
-      path: /api/v1/web/**
+      path: /back/**
       serviceId: jesus-api
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
     #前台项目地址 github
     github:
       path: /github

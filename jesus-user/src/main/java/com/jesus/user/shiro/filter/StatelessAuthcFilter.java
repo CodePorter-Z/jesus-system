@@ -24,9 +24,6 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 public class StatelessAuthcFilter extends AccessControlFilter {
 
-//    @Resource
-//    private RedisService redisService;
-
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object o) throws Exception {
         log.debug("StatelessAuthcFilter.isAccessAllowed()");
@@ -36,14 +33,14 @@ public class StatelessAuthcFilter extends AccessControlFilter {
     @Override
     protected boolean onAccessDenied(ServletRequest servletRequest, ServletResponse servletResponse) throws Exception {
         log.debug("StatelessAuthcFilter.onAccessDenied()");
-//
+
         HttpServletRequest request = WebUtils.toHttp(servletRequest);
         HttpServletResponse response = WebUtils.toHttp(servletResponse);
-        response.setHeader("Access-Control-Allow-Origin", "*");
-        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
-        response.setHeader("Access-Control-Max-Age", "3600");
-        response.setHeader("Access-Control-Allow-Headers", "Content-Type,x-requested-with,X-Token");
-        response.setHeader("Access-Control-Expose-Headers", "X-Token,timestamp");
+//        response.setHeader("Access-Control-Allow-Origin", "*");
+//        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+//        response.setHeader("Access-Control-Max-Age", "3600");
+//        response.setHeader("Access-Control-Allow-Headers", "Content-Type,x-requested-with,X-Token");
+//        response.setHeader("Access-Control-Expose-Headers", "X-Token,timestamp");
 //        if ("GET".equalsIgnoreCase(request.getMethod())) {
 //            response.sendError(404);
 //            return false;
@@ -53,6 +50,8 @@ public class StatelessAuthcFilter extends AccessControlFilter {
 //            return false;
 //        }
         String url = request.getServletPath();
+        String method = request.getMethod();
+        log.info(method);
         log.info(url);
         try {
 //            if(url.contains("/login")){

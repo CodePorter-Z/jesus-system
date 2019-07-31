@@ -1,6 +1,7 @@
 package com.jesus.common.base.constant;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -39,11 +40,11 @@ public interface GlobalConstant {
      * 渠道免密设置
      */
     class Channel{
-        public static List<String> channelList = new ArrayList<>();
+        public static Map<String,String> resourceMap = new HashMap<>();
 
         static {
             //系统管理员
-            channelList.add("jAdmin");
+            resourceMap.put("18888888888","jAdmin");
         }
     }
 }
