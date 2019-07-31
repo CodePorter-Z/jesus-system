@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="969aa289-ddc0-4f6c-acd9-90b13cb5b344" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/base/constant/GlobalConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/base/constant/GlobalConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="969aa289-ddc0-4f6c-acd9-90b13cb5b344" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
@@ -73,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+            <state relative-caret-position="228">
+              <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1511#1576#0" />
@@ -404,7 +396,7 @@
       <workItem from="1564101044212" duration="4030000" />
       <workItem from="1564361384260" duration="6970000" />
       <workItem from="1564385337676" duration="5190000" />
-      <workItem from="1564446335655" duration="30850000" />
+      <workItem from="1564446335655" duration="31751000" />
     </task>
     <task id="LOCAL-00001" summary="push demo">
       <created>1563958915102</created>
@@ -469,11 +461,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564535860832</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update demo config and code">
+      <created>1564563922851</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564563922851</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220856000" />
+    <option name="totallyTimeSpent" value="221757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -931,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+        <state relative-caret-position="228">
+          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1511#1576#0" />
