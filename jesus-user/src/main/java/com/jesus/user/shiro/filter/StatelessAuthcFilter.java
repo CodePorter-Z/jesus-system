@@ -36,7 +36,7 @@ public class StatelessAuthcFilter extends AccessControlFilter {
     @Override
     protected boolean onAccessDenied(ServletRequest servletRequest, ServletResponse servletResponse) throws Exception {
         log.debug("StatelessAuthcFilter.onAccessDenied()");
-
+//
         HttpServletRequest request = WebUtils.toHttp(servletRequest);
         HttpServletResponse response = WebUtils.toHttp(servletResponse);
         response.setHeader("Access-Control-Allow-Origin", "*");
@@ -44,14 +44,14 @@ public class StatelessAuthcFilter extends AccessControlFilter {
         response.setHeader("Access-Control-Max-Age", "3600");
         response.setHeader("Access-Control-Allow-Headers", "Content-Type,x-requested-with,X-Token");
         response.setHeader("Access-Control-Expose-Headers", "X-Token,timestamp");
-        if ("GET".equalsIgnoreCase(request.getMethod())) {
-            response.sendError(404);
-            return false;
-        }
-        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
-            response.sendError(202);
-            return false;
-        }
+//        if ("GET".equalsIgnoreCase(request.getMethod())) {
+//            response.sendError(404);
+//            return false;
+//        }
+//        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+//            response.sendError(202);
+//            return false;
+//        }
         String url = request.getServletPath();
         log.info(url);
         try {

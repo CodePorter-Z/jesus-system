@@ -12,6 +12,20 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8762/eureka
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 606000
+
+ribbon:
+  ReadTimeout: 300000
+  ConnectTimeout: 3000
+  eureka:
+    enabled: true
+
 #自定义路由映射
 zuul:
   routes:
