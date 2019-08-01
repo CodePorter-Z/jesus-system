@@ -1,20 +1,16 @@
 package com.jesus.user.web.controller.login;
 
-import com.jesus.common.base.constant.GlobalConstant;
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
-import com.jesus.user.modules.user.service.UserService;
 import com.jesus.user.shiro.data.Login;
 import com.jesus.user.shiro.token.CipherFreeToken;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
 import java.util.function.Function;
 
 @RestController
@@ -28,32 +24,21 @@ public class LoginController {
      * @param request HTTP 请求体体
      * @return JSON
      */
-//    @GetMapping(value = "/login")
-//    public Response doLogin(HttpServletRequest request) {
-//        String code = request.getParameter("code");
-//        if (CommonUtil.isEmpty(code)) {
-//            return Response.fail("请输入用户名");
-//        }
-//
-//        // 通过code，或其他方式进行渠道认证
-//        //Java 8 新特性 函数式接口
-//        Function<String, String> channel = (username -> {
-//            return username;
-////            Map<String, String> map = GlobalConstant.Channel.resourceMap;
-////            for (String str : map.keySet()) {
-////                String value = map.get(str);
-////                if (username.equals(value)) {
-////                    if (!CommonUtil.isNull(userService.findByUserName(username)))
-////                        return username;
-////                }
-////            }
-////            return null;
-//        });
-//        String login = channel.apply(code);
-//
-//        // 执行免密码登录
-//        return doLogin(new CipherFreeToken(login));
-//    }
+    @GetMapping(value = "/login")
+    public Response doLogin(HttpServletRequest request) {
+        String code = request.getParameter("code");
+        if (CommonUtil.isEmpty(code)) {
+            return Response.fail("请输入用户名");
+        }
+
+        // 通过code，或其他方式进行渠道认证
+        //Java 8 新特性 函数式接口
+        Function<String, String> channel = (username ->  username);
+        String login = channel.apply(code);
+
+        // 执行免密码登录
+        return doLogin(new CipherFreeToken(login));
+    }
 
     /**
      * 无状态登录

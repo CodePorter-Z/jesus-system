@@ -1,4 +1,4 @@
-package com.jesus.user.domain.role.dto;
+package com.jesus.user.web.controller.role.dto;
 
 import lombok.Data;
 

@@ -33,6 +33,9 @@ public class User extends GenerateId<Long> implements Serializable {
     @Column(name = "role_id")
     private Long roleId;
 
+    @Column
+    private String avatar;
+
     // 关联关系，不产生外键
     @ManyToOne
     @JoinColumn(name = "role_id", insertable = false, updatable = false,

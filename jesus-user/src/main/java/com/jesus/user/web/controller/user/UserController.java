@@ -1,6 +1,5 @@
 package com.jesus.user.web.controller.user;
 
-import com.jesus.common.base.bind.annotation.LoginAccount;
 import com.jesus.common.base.constant.GlobalConstant;
 import com.jesus.common.base.redis.service.RedisService;
 import com.jesus.common.response.Response;
@@ -27,9 +26,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Resource
-    private RedisService redisService;
-
     @PostMapping("/register")
     public Response register(@RequestBody User user){
         if(CommonUtil.isEmpty(user.getMobile())){
@@ -54,14 +50,14 @@ public class UserController {
         user.setState(User.State.ENABLED);
         try {
             //获取随机盐值
-            String salt = SecuritySHA1Utils.getRandomSalt();
-            if(CommonUtil.isEmpty(salt) || salt.length() < 20){
+            String salt = SecuritySHA1Utils.generateSalt();
+            if(CommonUtil.isEmpty(salt) || salt.length() < SecuritySHA1Utils.SALT_NUMBER){
                 return Response.fail("程序开小差了，请重新尝试");
             }
             user.setSalt(salt);
 
             //密码加密
-            String password = SecuritySHA1Utils.SHA1(user.getPassword(),salt);
+            String password = SecuritySHA1Utils.generateSHA1Key(user.getPassword(),salt,SecuritySHA1Utils.ITERATIONS);
             user.setPassword(password);
             userService.save(user);
             return Response.ok();
@@ -72,18 +68,18 @@ public class UserController {
     }
 
     @PostMapping("/getUserInfo")
-    public Response getUserInfo(@RequestBody User user){
+    public Response getUserInfo(String username){
         try {
-            if(CommonUtil.isNull(user.getUsername())){
+            if(CommonUtil.isNull(username)){
                 return Response.fail("用户名不能为空");
             }
-            user = userService.findByUserName(user.getUsername());
+            User user = userService.findByUserName(username);
             if(CommonUtil.isNull(user)){
                 return Response.fail("查询失败");
             }
             UserDto dto = new UserDto();
             BeanUtils.copyProperties(dto,user);
-            return Response.ok(user);
+            return Response.ok(dto);
         } catch (Exception e) {
             log.error("/getUserInfo 查询用户信息异常{}",e.getMessage());
         }
@@ -105,19 +101,4 @@ public class UserController {
         return Response.ok(user);
     }
 
-    @PostMapping("/getAccountUser")
-    public Response getAccountUser(@LoginAccount User user){
-        return Response.ok(user);
-    }
-
-    @GetMapping("/getCacheUser/{key}")
-    public Response getCacheUser(@PathVariable String key){
-        return Response.ok(redisService.get(key));
-    }
-
-    @PostMapping("/setUser")
-    public Response setUser(){
-        redisService.set("token",new User());
-        return Response.ok();
-    }
 }

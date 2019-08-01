@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="969aa289-ddc0-4f6c-acd9-90b13cb5b344" name="Default Changelist" comment="" />
+    <list default="true" id="969aa289-ddc0-4f6c-acd9-90b13cb5b344" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/encrypt/SecuritySHA1Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/encrypt/SecuritySHA1Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/role/dto/RoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/role/dto/RoleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/data/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/data/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/filter/LogRecodePostFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/filter/LogRecodePostFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
@@ -22,24 +38,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java">
+        <entry file="file://$PROJECT_DIR$/zuul-gateway/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="78" column="88" lean-forward="true" selection-start-line="78" selection-start-column="88" selection-end-line="78" selection-end-column="88" />
-              <folding>
-                <element signature="e#836#851#0" />
-                <element signature="e#1357#1359#0" />
-                <element signature="e#2031#2033#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+            <state relative-caret-position="361">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -47,63 +49,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="760">
+              <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/response/Response.java">
+        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="49" column="20" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="532">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
+        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/dto/UserDto.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1511#1576#0" />
-                <element signature="e#2288#2329#0" />
-              </folding>
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/JesusUserApplication.java">
+        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/ZuulServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="117" column="65" lean-forward="true" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2051#2052#0" expanded="true" />
-                <element signature="e#2091#2092#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="58">
+              <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -111,26 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="64" column="19" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="19" />
-              <folding>
-                <element signature="e#877#912#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/filter/LogRecodePostFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1826">
-              <caret line="128" selection-start-line="128" selection-end-line="128" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1041#1057#0" />
-                <element signature="e#3491#3563#0" />
-                <element signature="e#5472#5533#0" />
-              </folding>
+            <state relative-caret-position="438">
+              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -140,8 +120,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -159,6 +139,8 @@
       <find>未知</find>
       <find>getMethod();</find>
       <find>account not exist</find>
+      <find>redisservice.set</find>
+      <find>user.getUsername()</find>
     </findStrings>
     <replaceStrings>
       <replace>:</replace>
@@ -166,6 +148,7 @@
       <replace>Object</replace>
       <replace>kickOut</replace>
       <replace>redisTemplate</replace>
+      <replace>username</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -178,10 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/RetryLimitCredentialsMatcher.java" />
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/model/user/User.java" />
-        <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/encrypt/SecuritySHA1Utils.java" />
-        <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/config/redis/RedisManager.java" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/config/redis/RedisService.java" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/aop/LogRecordAspect.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/logger/aop/LogRecordAspect.java" />
@@ -194,7 +173,6 @@
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/role/service/RoleService.java" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/encrypt/aes/AES.java" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/encrypt/aes/AESUtil.java" />
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/user/service/UserService.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/user/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/KickoutSessionFilter.java" />
@@ -215,20 +193,25 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/jesus-user/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/jesus-common/pom.xml" />
         <option value="$PROJECT_DIR$/jesus-api/pom.xml" />
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/UserController.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/role/RoleResource.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/user/service/IUserService.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/resource/Resource.java" />
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/base/constant/GlobalConstant.java" />
-        <option value="$PROJECT_DIR$/zuul-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/filter/LogRecodePostFilter.java" />
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroConfiguration.java" />
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" />
+        <option value="$PROJECT_DIR$/jesus-common/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/data/Login.java" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/UserController.java" />
+        <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/encrypt/SecuritySHA1Utils.java" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/role/controller/RoleDto.java" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/role/dto/RoleDto.java" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/filter/LogRecodePostFilter.java" />
       </list>
     </option>
   </component>
@@ -259,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,12 +250,67 @@
               <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
+              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
+              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
+              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
+              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
+              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
+              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
+              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,7 +330,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -323,7 +362,20 @@
     </option>
     <option name="contentProportion" value="0.15367965" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+    <configuration name="SecuritySHA1Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jesus.common.utils.encrypt.SecuritySHA1Utils" />
+      <module name="jesus-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jesus.common.utils.encrypt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jesus.eurekaserver.EurekaServerApplication" />
@@ -361,12 +413,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.SecuritySHA1Utils" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.JesusApiApplication" />
       <item itemvalue="Spring Boot.JesusCommonApplication" />
       <item itemvalue="Spring Boot.JesusUserApplication" />
       <item itemvalue="Spring Boot.ZuulServerApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SecuritySHA1Utils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -396,7 +454,10 @@
       <workItem from="1564101044212" duration="4030000" />
       <workItem from="1564361384260" duration="6970000" />
       <workItem from="1564385337676" duration="5190000" />
-      <workItem from="1564446335655" duration="31751000" />
+      <workItem from="1564446335655" duration="32670000" />
+      <workItem from="1564621793427" duration="2670000" />
+      <workItem from="1564626434911" duration="6669000" />
+      <workItem from="1564639892784" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="push demo">
       <created>1563958915102</created>
@@ -468,11 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564563922851</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update demo config and code">
+      <created>1564564905598</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564564905598</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221757000" />
+    <option name="totallyTimeSpent" value="233497000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,7 +554,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26545843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23933902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -509,8 +577,8 @@
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49946696" weight="0.3286334" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.4989339" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4989339" visible="true" weight="0.3275488" />
-      <window_info anchor="bottom" id="ConsoleMavenPlugin" order="16" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4989339" visible="true" weight="0.3264642" />
+      <window_info anchor="bottom" id="ConsoleMavenPlugin" order="16" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -533,100 +601,8 @@
     <MESSAGE value="update demo config and code" />
     <option name="LAST_COMMIT_MESSAGE" value="update demo config and code" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/token/CipherFreeToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-gateway/mvnw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4927" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-gateway/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-common/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-api/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-api/src/main/java/com/jesus/api/controller/ComputeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/repository/ResourceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/ResourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/permissions/Permissions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/permissions/Permissions.java" />
     <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/IResourceService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -634,13 +610,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/UserRole.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -666,13 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -704,16 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/role/RoleResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/role/RoleResource.java" />
     <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/role/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -755,20 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/data/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/data/CipherFreeHashedCredentialsMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -797,31 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/AccessControlFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/base/constant/GlobalConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="119" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -832,68 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="78" column="88" lean-forward="true" selection-start-line="78" selection-start-column="88" selection-end-line="78" selection-end-column="88" />
-          <folding>
-            <element signature="e#836#851#0" />
-            <element signature="e#1357#1359#0" />
-            <element signature="e#2031#2033#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="117" column="65" lean-forward="true" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2051#2052#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/ZuulServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/JesusUserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/AbstractAuthenticator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/filter/LogRecodePostFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1826">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1041#1057#0" />
-            <element signature="e#3491#3563#0" />
-            <element signature="e#5472#5533#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,39 +765,192 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroRealm.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/realm/AuthorizingRealm.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+        <state relative-caret-position="190">
+          <caret line="299" column="71" lean-forward="true" selection-start-line="299" selection-start-column="71" selection-end-line="299" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="e#877#912#0" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/response/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="779">
           <caret line="49" column="20" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/JesusUserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/ZuulServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="117" column="65" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_211/src.zip!/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="250" column="26" selection-start-line="250" selection-start-column="26" selection-end-line="250" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/AuthenticationToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/RememberMeAuthenticationToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/HostAuthenticationToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/UsernamePasswordToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/data/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/AccessControlFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/encrypt/SecuritySHA1Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/role/dto/RoleDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-gateway/src/main/java/com/jesus/zuul/filter/LogRecodePostFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="54" column="22" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        <state relative-caret-position="532">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1511#1576#0" />
-            <element signature="e#2288#2329#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
         </state>
       </provider>
     </entry>

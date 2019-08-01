@@ -8,6 +8,12 @@ import java.security.SecureRandom;
 
 public class SecuritySHA1Utils {
 
+    //加密次数
+    public static final int ITERATIONS = 1024;
+
+    //随机盐长度
+    public static final int SALT_NUMBER = 20;
+
     /**
      * SHA 加密
      * @param inStr
@@ -43,15 +49,15 @@ public class SecuritySHA1Utils {
      * @param salt  盐值
      * @return 加密后的字符串
      */
-    public static String SHA1(String credentials,String salt){
-        return encryptType("SHA-1",credentials,salt,1024);
+    public static String generateSHA1Key(String credentials,String salt,int iterations){
+        return encryptType("SHA-1",credentials,salt,iterations);
     }
 
     /**
      * 用于生成随机盐值
      * @return 20位 随机字符串
      */
-    public static String getRandomSalt() {
+    public static String generateSalt() {
         SecureRandom random = new SecureRandom();
         byte bytes[] = new byte[15];
         random.nextBytes(bytes);
@@ -73,10 +79,11 @@ public class SecuritySHA1Utils {
 
     public static void main(String args[]) throws Exception {
 //        String str = "123456";
-//        System.out.println(getRandomSalt());
+//        String salt = generateSalt();
+//        System.out.println(salt);
 //        System.out.println("原始：" + str);
 //        System.out.println("SHA后：" + shaEncode(str));
-//        System.out.println("SHA后：" + SHA1(str));
+//        System.out.println("SHA后：" + generateSHA1Key(str,salt,1024));
     }
 }
  
