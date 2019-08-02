@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="969aa289-ddc0-4f6c-acd9-90b13cb5b344" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jesus-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-api/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jesus-user/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/jesus-user/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/ResourceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state>
               <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
@@ -38,51 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zuul-gateway/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jesus-user/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jesus-api/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eureka-server/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="304">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -91,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/IResourceService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -99,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/resource/controller/ResourceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="855">
               <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/repository/ResourceRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="152">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -165,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jesus-common/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/jesus-api/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/base/redis/service/impl/IRedisService.java" />
@@ -196,7 +149,6 @@
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/domain/user/User.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/ShiroRealm.java" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/utils/CookieUtil.java" />
-        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/KickoutSessionFilter.java" />
         <option value="$PROJECT_DIR$/jesus-common/src/main/java/com/jesus/common/base/constant/GlobalConstant.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/LoginAccountFilter.java" />
@@ -212,6 +164,8 @@
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/resource/controller/ResourceController.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/IResourceService.java" />
         <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/repository/ResourceRepository.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java" />
         <option value="$PROJECT_DIR$/zuul-gateway/.gitignore" />
         <option value="$PROJECT_DIR$/jesus-user/.gitignore" />
         <option value="$PROJECT_DIR$/jesus-api/.gitignore" />
@@ -253,26 +207,6 @@
             <path>
               <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
               <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
-              <item name="jesus-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
-              <item name="jesus-user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jesus-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jesus-system" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-gateway" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -426,6 +360,7 @@
       <workItem from="1564621793427" duration="2670000" />
       <workItem from="1564626434911" duration="6669000" />
       <workItem from="1564639892784" duration="18067000" />
+      <workItem from="1564715685297" duration="921000" />
     </task>
     <task id="LOCAL-00001" summary="push demo">
       <created>1563958915102</created>
@@ -518,11 +453,32 @@
       <option name="project" value="LOCAL" />
       <updated>1564714974625</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update demo config and code">
+      <created>1564715824252</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1564715824252</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update demo config and code">
+      <created>1564715858936</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1564715858936</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update demo config and code">
+      <created>1564715921487</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564715921487</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250082000" />
+    <option name="totallyTimeSpent" value="251003000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -585,13 +541,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update demo config and code" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/PathMatchingFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Java/jdk1.8.0_211/src.zip!/java/lang/ApplicationShutdownHooks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -896,30 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/ResourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/repository/ResourceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/resource/controller/ResourceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.9.RELEASE/spring-data-jpa-2.1.9.RELEASE.jar!/org/springframework/data/jpa/repository/query/JpaQueryExecution.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -927,50 +852,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/service/IResourceService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/web/controller/resource/controller/ResourceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-gateway/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        <state relative-caret-position="855">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jesus-user/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-gateway/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-common/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/shiro/filter/StatelessAuthcFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jesus-api/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules/resource/repository/ResourceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
