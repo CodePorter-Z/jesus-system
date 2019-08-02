@@ -1,26 +1,16 @@
 package com.jesus.user.shiro.filter;
 
-import com.jesus.common.base.constant.GlobalConstant;
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
-import com.jesus.common.utils.CookieUtil;
 import com.jesus.common.utils.RenderUtil;
-import com.jesus.common.utils.encrypt.aes.AESUtil;
-import com.jesus.user.domain.user.User;
-import com.jesus.user.shiro.data.Login;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.ConcurrentAccessException;
-import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
