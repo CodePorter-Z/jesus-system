@@ -289,7 +289,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore&#10;E:/IdeaProjects/jesus-system/zuul-gateway/.gitignore" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore&#10;E:/IdeaProjects/jesus-system/jesus-api/.gitignore&#10;E:/IdeaProjects/jesus-system/zuul-gateway/.gitignore&#10;E:/IdeaProjects/jesus-system/eureka-server/.gitignore&#10;E:/IdeaProjects/jesus-system/jesus-user/.gitignore" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jesus-user/src/main/java/com/jesus/user/modules" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
