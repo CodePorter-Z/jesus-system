@@ -80,9 +80,8 @@ public class SecuritySHA1Utils {
     public static void main(String args[]) throws Exception {
 //        String str = "123456";
 //        String salt = generateSalt();
-//        System.out.println(salt);
 //        System.out.println("原始：" + str);
-//        System.out.println("SHA后：" + shaEncode(str));
+//        System.out.println("盐值: " + salt);
 //        System.out.println("SHA后：" + generateSHA1Key(str,salt,1024));
     }
 }

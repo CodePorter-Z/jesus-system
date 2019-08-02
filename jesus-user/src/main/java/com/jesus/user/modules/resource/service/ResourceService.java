@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface ResourceService extends BaseService<Long, Resource, ResourceRepository> {
 
-    List<Resource> getResourceAllById(String resourceIds);
+    List<String> getResourceAllById(String resourceIds);
 
 }

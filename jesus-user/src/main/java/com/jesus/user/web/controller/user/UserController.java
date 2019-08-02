@@ -3,6 +3,7 @@ package com.jesus.user.web.controller.user;
 import com.jesus.common.base.constant.GlobalConstant;
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
+import com.jesus.common.utils.ValidateUtil;
 import com.jesus.common.utils.encrypt.SecuritySHA1Utils;
 import com.jesus.user.modules.user.service.UserService;
 import com.jesus.user.web.controller.user.dto.UserDto;
@@ -29,9 +30,12 @@ public class UserController {
         if(CommonUtil.isEmpty(user.getMobile())){
             return Response.fail("手机号为必填的哦");
         }
-        if(CommonUtil.isEmpty(user.getName())){
-            return Response.fail("为了您的信息安全，请填写您的真实姓名哟");
+        if(!ValidateUtil.isMobile(user.getMobile())){
+            return Response.fail("手机号验证不通过");
         }
+//        if(CommonUtil.isEmpty(user.getName())){
+//            return Response.fail("为了您的信息安全，请填写您的真实姓名哦");
+//        }
         if(CommonUtil.isEmpty(user.getUsername())){
             user.setUsername(user.getMobile());
         }
@@ -40,9 +44,12 @@ public class UserController {
             String mobile = user.getMobile();
             user.setPassword(mobile.substring(mobile.length()-6));
         }
+        if(!ValidateUtil.isPassLength(user.getPassword())){
+            return Response.fail("密码验证不通过，密码长度要小于16位大于6位哦");
+        }
         if (CommonUtil.isNull(user.getRoleId())) {
             //默认为普通用户
-            user.setRoleId(2l);
+            user.setRoleId(2L);
         }
         user.setCreateTime(new Date());
         user.setState(User.State.ENABLED);

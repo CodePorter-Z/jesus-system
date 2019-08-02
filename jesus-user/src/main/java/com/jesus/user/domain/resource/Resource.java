@@ -22,12 +22,14 @@ public class Resource extends GenerateId<Long> implements Serializable {
     private String url;
 
     @Column(name = "parent_id")
-    private String parentId;
+    private Long parentId;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private Type type;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private Status state;
 
     /**

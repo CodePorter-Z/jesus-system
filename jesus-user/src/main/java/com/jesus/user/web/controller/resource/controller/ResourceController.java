@@ -40,7 +40,7 @@ public class ResourceController {
                         && !CommonUtil.isEmpty(role.getResourceIds())){
 
                     //获取用户权限列表
-                    List<Resource> resourceList = resourceService.getResourceAllById(role.getResourceIds());
+                    List<String> resourceList = resourceService.getResourceAllById(role.getResourceIds());
 
                     if(CommonUtil.isNotNull(resourceList))
                         return Response.ok(resourceList);
