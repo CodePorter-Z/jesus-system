@@ -1,7 +1,6 @@
 package com.jesus.user.web.controller.user;
 
 import com.jesus.common.base.constant.GlobalConstant;
-import com.jesus.common.base.redis.service.RedisService;
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
 import com.jesus.common.utils.encrypt.SecuritySHA1Utils;
@@ -13,7 +12,6 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
@@ -68,22 +66,24 @@ public class UserController {
     }
 
     @PostMapping("/getUserInfo")
-    public Response getUserInfo(String username){
+    public Response getUserInfo(HttpServletRequest request){
         try {
-            if(CommonUtil.isNull(username)){
-                return Response.fail("用户名不能为空");
-            }
-            User user = userService.findByUserName(username);
-            if(CommonUtil.isNull(user)){
-                return Response.fail("查询失败");
-            }
-            UserDto dto = new UserDto();
-            BeanUtils.copyProperties(dto,user);
-            return Response.ok(dto);
-        } catch (Exception e) {
-            log.error("/getUserInfo 查询用户信息异常{}",e.getMessage());
-        }
+            //获取user
+            User user = (User)request.getAttribute(GlobalConstant.User.LOGIN_ACCOUNT);
+            if(CommonUtil.isNotNull(user)){
 
+                UserDto dto = new UserDto();
+                //使用spring 工具 复制user
+                BeanUtils.copyProperties(dto, user);
+                //状态描述
+                dto.setState_desc(user.getState().desc);
+                return Response.ok(dto);
+
+            }
+
+        } catch (Exception e) {
+            log.error("查询用户信息异常:{}",e.getMessage());
+        }
         return Response.fail("查询失败");
     }
 
@@ -96,7 +96,7 @@ public class UserController {
                 return Response.fail("获取失败");
             }
         } catch (Exception e) {
-            log.error("查询当前用户异常{}",e.getMessage());
+            log.error("查询当前用户异常:{}",e.getMessage());
         }
         return Response.ok(user);
     }

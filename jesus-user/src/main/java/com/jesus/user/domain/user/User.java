@@ -48,7 +48,7 @@ public class User extends GenerateId<Long> implements Serializable {
     public enum State {
         ENABLED("启用"), DISABLED("禁用"), DELETED("异常");
 
-        private String desc;
+        public String desc;
 
         State(String desc) {
             this.desc = desc;

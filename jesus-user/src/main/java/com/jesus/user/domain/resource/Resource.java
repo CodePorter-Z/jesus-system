@@ -37,12 +37,12 @@ public class Resource extends GenerateId<Long> implements Serializable {
     private String permission;
 
     public enum Type {
-        Menu(1), Button(0);
+        Menu("菜单"), Button("按钮");
 
-        private Integer type;
+        public String desc;
 
-        Type(Integer type) {
-            this.type = type;
+        Type(String desc) {
+            this.desc = desc;
         }
     }
 
@@ -52,7 +52,7 @@ public class Resource extends GenerateId<Long> implements Serializable {
     public enum Status {
         ENABLED("启用"), DISABLED("禁用"), DELETED("异常");
 
-        private String desc;
+        public String desc;
 
         Status(String desc) {
             this.desc = desc;

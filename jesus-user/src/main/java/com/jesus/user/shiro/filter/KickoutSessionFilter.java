@@ -66,17 +66,17 @@ public class KickoutSessionFilter extends AccessControlFilter {
             return true;
         }
         Session session = subject.getSession();
-        log.info("==session时间设置：" + session.getTimeout()+"===========");
+        log.info("session 时间设置：{}" , session.getTimeout());
         try {
             // 当前用户
             User user = (User) subject.getPrincipal();
             String username = user.getUsername();
-            log.info("===当前用户username：==" + username);
+            log.info("当前用户 username：{}" , username);
             Serializable sessionId = session.getId();
-            log.info("===当前用户sessionId：==" + sessionId);
+            log.info("当前用户 sessionId：{}",sessionId);
             // 读取缓存用户 没有就存入
             Deque<Serializable> deque = cache.get(username);
-            log.info("===当前deque：==" + deque);
+            log.info("当前 deque：{}", deque);
             if (deque == null) {
                 // 初始化队列
                 deque = new ArrayDeque<Serializable>();

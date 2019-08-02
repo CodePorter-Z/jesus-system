@@ -3,6 +3,7 @@ package com.jesus.user.shiro.filter;
 import com.jesus.common.base.constant.GlobalConstant;
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
+import com.jesus.common.utils.CookieUtil;
 import com.jesus.common.utils.RenderUtil;
 import com.jesus.common.utils.encrypt.aes.AESUtil;
 import com.jesus.user.domain.user.User;
@@ -19,6 +20,7 @@ import org.apache.shiro.web.util.WebUtils;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 

@@ -23,6 +23,10 @@ public class CommonUtil {
         return false;
     }
 
+    public static boolean isNotNull(Object obj){
+        return !isNull(obj);
+    }
+
     /**
      * 用于判断字符串
      *   采用apache lang3 工具包

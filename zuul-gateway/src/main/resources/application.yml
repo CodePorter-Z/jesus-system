@@ -28,17 +28,17 @@ ribbon:
 
 #自定义路由映射
 zuul:
+  # 网关默认阻止将 cookie 传递给下游服务, 配置不过滤cookie
+  sensitive-headers:
   routes:
     # 用户模块
     jesus-user:
       path: /auth/**
       serviceId: jesus-user
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
     #api 模块
     jesus-api:
       path: /back/**
       serviceId: jesus-api
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
     #前台项目地址 github
     github:
       path: /github

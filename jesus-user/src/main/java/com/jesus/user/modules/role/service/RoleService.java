@@ -6,5 +6,5 @@ import com.jesus.user.modules.role.repository.RoleRepository;
 
 public interface RoleService extends BaseService<Long, Role, RoleRepository> {
 
-
+    Role findRoleById(Long id);
 }

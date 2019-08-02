@@ -5,4 +5,6 @@ import com.jesus.user.domain.role.Role;
 
 public interface RoleRepository extends BaseRepository<Long, Role> {
 
+    Role findRoleById(Long id);
+
 }

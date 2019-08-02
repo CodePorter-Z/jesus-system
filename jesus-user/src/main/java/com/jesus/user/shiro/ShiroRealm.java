@@ -1,7 +1,5 @@
 package com.jesus.user.shiro;
 
-import com.jesus.common.base.constant.GlobalConstant;
-import com.jesus.common.base.redis.service.RedisService;
 import com.jesus.common.utils.CommonUtil;
 import com.jesus.user.modules.user.service.UserService;
 import com.jesus.user.shiro.serializable.ByteSourceUtils;
@@ -22,9 +20,6 @@ public class ShiroRealm extends AuthorizingRealm {
     @Resource
     private UserService userService;
 
-    @Resource
-    private RedisService redisService;
-
     //权限信息，包括角色以及权限
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
@@ -40,7 +35,11 @@ public class ShiroRealm extends AuthorizingRealm {
         return authorizationInfo;
     }
 
-    /*主要是用来进行身份认证的，也就是说验证用户输入的账号和密码是否正确。*/
+    /**
+     *
+     * 主要是用来进行身份认证的，也就是说验证用户输入的账号和密码是否正确。
+     *
+     */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token)
             throws AuthenticationException {
@@ -62,8 +61,6 @@ public class ShiroRealm extends AuthorizingRealm {
         if(user.getState() != User.State.ENABLED){
             throw new LockedAccountException("account has locked. contact system manager unlock");
         }
-
-        redisService.set(GlobalConstant.Redis.REDIS_USER,user);
 
         /**
          * @parmater 1

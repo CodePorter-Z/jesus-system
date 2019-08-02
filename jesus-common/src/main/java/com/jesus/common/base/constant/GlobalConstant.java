@@ -26,7 +26,7 @@ public interface GlobalConstant {
     interface User{
         //登录时存储到request中的key
         String LOGIN_ACCOUNT = "account";
-        String USER_ID = "userId";
+        String ID = "userId";
     }
 
     /**
