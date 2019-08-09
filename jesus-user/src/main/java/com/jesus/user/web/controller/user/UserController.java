@@ -5,7 +5,7 @@ import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
 import com.jesus.common.utils.ValidateUtil;
 import com.jesus.common.utils.encrypt.SecuritySHA1Utils;
-import com.jesus.user.modules.user.service.UserService;
+import com.jesus.user.modules.user.service.IUserService;
 import com.jesus.user.web.controller.user.dto.UserDto;
 import com.jesus.user.domain.user.User;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +23,7 @@ import java.util.Date;
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    private IUserService userService;
 
     @PostMapping("/register")
     public Response register(@RequestBody User user){

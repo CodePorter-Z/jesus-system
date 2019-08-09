@@ -2,10 +2,9 @@ package com.jesus.user.web.controller.resource.controller;
 
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
-import com.jesus.user.domain.resource.Resource;
 import com.jesus.user.domain.role.Role;
-import com.jesus.user.modules.resource.service.ResourceService;
-import com.jesus.user.modules.role.service.RoleService;
+import com.jesus.user.modules.resource.service.IResourceService;
+import com.jesus.user.modules.role.service.IRoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,10 +24,10 @@ import java.util.List;
 public class ResourceController {
 
     @Autowired
-    private ResourceService resourceService;
+    private IResourceService resourceService;
 
     @Autowired
-    private RoleService roleService;
+    private IRoleService roleService;
 
     @RequestMapping("/generateRoutes")
     public Response generateRoutes(Long id){
@@ -40,7 +39,7 @@ public class ResourceController {
                         && !CommonUtil.isEmpty(role.getResourceIds())){
 
                     //获取用户权限列表
-                    List<String> resourceList = resourceService.getResourceAllById(role.getResourceIds());
+                    List<String> resourceList = resourceService.getResourceAll(role.getResourceIds());
 
                     if(CommonUtil.isNotNull(resourceList))
                         return Response.ok(resourceList);

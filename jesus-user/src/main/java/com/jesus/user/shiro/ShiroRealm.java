@@ -1,7 +1,7 @@
 package com.jesus.user.shiro;
 
 import com.jesus.common.utils.CommonUtil;
-import com.jesus.user.modules.user.service.UserService;
+import com.jesus.user.modules.user.service.IUserService;
 import com.jesus.user.shiro.serializable.ByteSourceUtils;
 import com.jesus.user.domain.user.User;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +18,7 @@ import java.util.Set;
 public class ShiroRealm extends AuthorizingRealm {
 
     @Resource
-    private UserService userService;
+    private IUserService userService;
 
     //权限信息，包括角色以及权限
     @Override
