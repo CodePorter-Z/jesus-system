@@ -1,10 +1,19 @@
 package com.jesus.user.logger.service;
 
-import com.jesus.common.base.core.service.BaseService;
 import com.jesus.user.logger.repository.LogActionRepository;
-import com.jesus.user.domain.logaction.LogAction;
+import org.springframework.stereotype.Service;
 
-public interface LogActionService extends BaseService<Long, LogAction, LogActionRepository> {
+import javax.annotation.Resource;
 
 
+@Service
+public class LogActionService implements ILogActionService {
+
+    @Resource
+    private LogActionRepository logActionRepository;
+
+    @Override
+    public LogActionRepository getRepository() {
+        return logActionRepository;
+    }
 }

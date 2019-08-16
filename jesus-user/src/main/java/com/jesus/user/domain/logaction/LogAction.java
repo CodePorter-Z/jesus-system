@@ -17,6 +17,9 @@ public class LogAction extends GenerateId<Long> implements Serializable {
     private String username;
 
     @Column
+    private String uri;
+
+    @Column
     private String ip;
 
     @Column

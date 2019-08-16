@@ -2,6 +2,7 @@ package com.jesus.user.web.controller.login;
 
 import com.jesus.common.response.Response;
 import com.jesus.common.utils.CommonUtil;
+import com.jesus.user.logger.annotation.Authorization;
 import com.jesus.user.shiro.data.Login;
 import com.jesus.user.shiro.token.CipherFreeToken;
 import lombok.extern.slf4j.Slf4j;
@@ -47,6 +48,7 @@ public class LoginController {
      * @return json
      */
     @PostMapping(value = "/login")
+    @Authorization
     public Response login(@RequestBody Login login) {
 
         UsernamePasswordToken token = new UsernamePasswordToken(login.getUsername(),
