@@ -14,7 +14,7 @@
     <artifactId>code-porter-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>code-porter-core</name>
-    <description>项目核心依赖</description>
+    <description>核心依赖模块</description>
 
     <properties>
         <java.version>1.8</java.version>
