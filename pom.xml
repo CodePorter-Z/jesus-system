@@ -22,6 +22,7 @@
         <module>code-porter-common</module>
         <module>code-porter-user</module>
         <module>code-porter-core</module>
+        <module>code-porter-feign</module>
         <module>code-porter-zuul</module>
     </modules>
 
