@@ -5,13 +5,13 @@
 
     <parent>
         <groupId>com.jesus.mycloud</groupId>
-        <artifactId>jesus-system</artifactId>
+        <artifactId>code-porter-system</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.jesus.fashion.zuul</groupId>
-    <artifactId>zuul-gateway</artifactId>
+    <artifactId>code-porter-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>code-porter-zuul</name>
     <description>网关服务</description>

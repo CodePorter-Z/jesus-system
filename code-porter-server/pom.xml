@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.jesus.mycloud</groupId>
-        <artifactId>jesus-system</artifactId>
+        <artifactId>code-porter-system</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
 
     <groupId>com.jesus</groupId>
-    <artifactId>eureka-server</artifactId>
+    <artifactId>code-porter-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>code-porter-server</name>
 
