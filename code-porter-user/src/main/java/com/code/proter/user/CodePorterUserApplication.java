@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class JesusUserApplication {
+public class CodePorterUserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JesusUserApplication.class, args);
+        SpringApplication.run(CodePorterUserApplication.class, args);
     }
 
     @Bean // Redis

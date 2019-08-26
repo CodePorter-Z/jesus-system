@@ -13,10 +13,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 // 启动baseDao  jpa实现面向接口编程
 @EnableJpaRepositories(repositoryFactoryBeanClass = BaseDaoFactoryBean.class, basePackages = "com.jesus.common.base.expant")
 @EnableTransactionManagement
-public class JesusCommonApplication {
+public class CodePorterCommonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JesusCommonApplication.class, args);
+        SpringApplication.run(CodePorterCommonApplication.class, args);
     }
 
 }
