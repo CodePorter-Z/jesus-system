@@ -14,14 +14,15 @@
     <groupId>com.jesus.mycloud</groupId>
     <artifactId>jesus-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jesus-system</name>
+    <name>code-porter-system</name>
 
     <modules>
-        <module>eureka-server</module>
-        <module>jesus-api</module>
-        <module>jesus-common</module>
-        <module>jesus-user</module>
-        <module>zuul-gateway</module>
+        <module>code-porter-server</module>
+        <module>code-porter-api</module>
+        <module>code-porter-common</module>
+        <module>code-porter-user</module>
+        <module>code-porter-core</module>
+        <module>code-porter-zuul</module>
     </modules>
 
 <!--    <build>-->
