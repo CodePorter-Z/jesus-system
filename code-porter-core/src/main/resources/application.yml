@@ -1,0 +1,11 @@
+server:
+  port: 8186
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+
+spring:
+  application:
+    name: jesus-core
